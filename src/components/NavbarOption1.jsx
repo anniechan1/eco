@@ -78,14 +78,18 @@ function NavbarOption1() {
             </span>
             <div className="dropdown-menu-organic">
               <Link to="/organic-certification" className="dropdown-link-organic" onClick={closeMobileMenu}>
-                Organic Certification
+                Scope of Certification
               </Link>
-              <Link to="/eudr-compliance" className="dropdown-link-organic" onClick={closeMobileMenu}>
-                EUDR Compliance
+              <Link to="/certification-process" className="dropdown-link-organic" onClick={closeMobileMenu}>
+              Certification Process
               </Link>
-              <Link to="/fairtrade" className="dropdown-link-organic" onClick={closeMobileMenu}>
-                Fairtrade Certification
+              <Link to="/independence-integrity" className="dropdown-link-organic" onClick={closeMobileMenu}>
+              Independence & Integrity
               </Link>
+              <Link to="/international-standards" className="dropdown-link-organic" onClick={closeMobileMenu}>
+              International Standards
+              </Link>
+              
             </div>
           </li>
 

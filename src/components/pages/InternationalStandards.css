@@ -1,0 +1,249 @@
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+  font-family: "Lato", sans-serif;
+  color: #4a4a4a;
+  background-color: #fcfbf7;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.page-header h1 {
+  color: #5f8c5f;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.leaf-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.divider-line {
+  height: 1px;
+  width: 80px;
+  background-color: #d5d1b7;
+  margin: 0 15px;
+}
+
+.leaf-divider i {
+  color: #7ea87e;
+  font-size: 18px;
+}
+
+.standards-container {
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.standards-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.standards-intro p {
+  font-size: 22px;
+  color: #5f8c5f;
+  font-weight: 500;
+}
+
+.standards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.standard-card {
+  background-color: #f9f7f0;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.standard-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.standard-icon {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.standard-icon i {
+  font-size: 32px;
+  color: #7ea87e;
+}
+
+.standard-card h3 {
+  color: #5f8c5f;
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.standard-card p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.standard-image-placeholder {
+  width: 100%;
+  height: 180px;
+  background-color: rgba(126, 168, 126, 0.1);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7ea87e;
+  font-style: italic;
+  border: 1px dashed rgba(126, 168, 126, 0.3);
+  margin-top: auto;
+}
+
+.traceability-section {
+  background: linear-gradient(135deg, #f9f7f0, #e7dfc6);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.traceability-content {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.traceability-icon {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.traceability-icon i {
+  font-size: 32px;
+  color: #7ea87e;
+}
+
+.traceability-content h2 {
+  color: #5f8c5f;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.traceability-content p {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.traceability-visual {
+  flex: 1;
+  min-width: 300px;
+}
+
+.traceability-image-placeholder {
+  width: 100%;
+  height: 250px;
+  background-color: rgba(126, 168, 126, 0.1);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7ea87e;
+  font-style: italic;
+  border: 1px dashed rgba(126, 168, 126, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (max-width: 768px) {
+  .standards-container {
+    padding: 30px 20px;
+  }
+
+  .standards-intro p {
+    font-size: 18px;
+  }
+
+  .standard-card {
+    padding: 25px;
+  }
+
+  .standard-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .standard-icon i {
+    font-size: 24px;
+  }
+
+  .standard-card h3 {
+    font-size: 18px;
+  }
+
+  .standard-card p {
+    font-size: 15px;
+  }
+
+  .standard-image-placeholder {
+    height: 150px;
+  }
+
+  .traceability-section {
+    padding: 30px 20px;
+  }
+
+  .traceability-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .traceability-icon i {
+    font-size: 24px;
+  }
+
+  .traceability-content h2 {
+    font-size: 22px;
+  }
+
+  .traceability-content p {
+    font-size: 16px;
+  }
+
+  .traceability-image-placeholder {
+    height: 200px;
+  }
+}

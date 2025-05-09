@@ -2,16 +2,14 @@ import React from 'react';
 import '../../App.css';
 
 import HeroOption1 from '../HeroOption1';
+import HomeAboutSection from '../HomeAboutSection';
 
 
-import HighlightsSectionOption2 from '../HighlightsSectionOption2';
-import ActionAndHighlights from '../ActionAndHighlights';
 function Home() {
   return (
     <>
       <HeroOption1 />
-      <HighlightsSectionOption2 />
-      <ActionAndHighlights />
+      <HomeAboutSection /> {/* Change to designOption={2} to see the second design */}
     
     </>
   );

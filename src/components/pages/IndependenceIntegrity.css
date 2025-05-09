@@ -1,0 +1,317 @@
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+  font-family: "Lato", sans-serif;
+  color: #4a4a4a;
+  background-color: #fcfbf7;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.page-header h1 {
+  color: #5f8c5f;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.leaf-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.divider-line {
+  height: 1px;
+  width: 80px;
+  background-color: #d5d1b7;
+  margin: 0 15px;
+}
+
+.leaf-divider i {
+  color: #7ea87e;
+  font-size: 18px;
+}
+
+/* New Banner Design */
+.integrity-banner {
+  background: linear-gradient(135deg, #7ea87e, #a7c4a7);
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.integrity-banner::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.integrity-banner::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+}
+
+.integrity-banner h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.integrity-banner p {
+  font-size: 22px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Principles Section */
+.principles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.principles-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.principles-image-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  background-color: rgba(126, 168, 126, 0.1);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7ea87e;
+  font-style: italic;
+  border: 1px dashed rgba(126, 168, 126, 0.3);
+}
+
+.principles-list {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+}
+
+.principle-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #f9f7f0;
+  border-radius: 15px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.principle-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.principle-icon {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.principle-icon i {
+  font-size: 24px;
+  color: #7ea87e;
+}
+
+.principle-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  color: #4a4a4a;
+}
+
+/* Governance Section */
+.governance-container {
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 60px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.governance-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.governance-text {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.governance-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #7ea87e, #a7c4a7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.governance-icon i {
+  font-size: 32px;
+  color: white;
+}
+
+.governance-text h2 {
+  color: #5f8c5f;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.governance-divider {
+  width: 80px;
+  height: 3px;
+  background-color: #7ea87e;
+  margin: 0 auto 20px;
+}
+
+.governance-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #4a4a4a;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: rgba(126, 168, 126, 0.05);
+  border-radius: 10px;
+  padding: 20px;
+  border-left: 4px solid #7ea87e;
+}
+
+.governance-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.governance-image-placeholder {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(126, 168, 126, 0.1);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7ea87e;
+  font-style: italic;
+  border: 1px dashed rgba(126, 168, 126, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (max-width: 768px) {
+  .integrity-banner {
+    padding: 30px 20px;
+  }
+
+  .integrity-banner h2 {
+    font-size: 24px;
+  }
+
+  .integrity-banner p {
+    font-size: 18px;
+  }
+
+  .principles-container,
+  .governance-container {
+    padding: 30px 20px;
+  }
+
+  .principle-item {
+    padding: 15px;
+  }
+
+  .principle-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .principle-icon i {
+    font-size: 20px;
+  }
+
+  .principle-text p {
+    font-size: 15px;
+  }
+
+  .governance-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .governance-icon i {
+    font-size: 24px;
+  }
+
+  .governance-text h2 {
+    font-size: 22px;
+  }
+
+  .governance-text p {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .principles-image-placeholder,
+  .governance-image-placeholder {
+    min-height: 250px;
+  }
+}
