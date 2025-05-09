@@ -1,0 +1,260 @@
+.team-container {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  color: #4a4a4a;
+  background-color: #fcfbf7;
+}
+
+.team-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.team-header h1 {
+  color: #5f8c5f;
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.leaf-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.leaf-divider::before,
+.leaf-divider::after {
+  content: "";
+  height: 1px;
+  background-color: rgba(126, 168, 126, 0.3);
+  width: 80px;
+  margin: 0 15px;
+}
+
+.leaf-divider i {
+  color: #7ea87e;
+  font-size: 24px;
+}
+
+.team-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 40px 0;
+}
+
+.team-images {
+  width: 100%;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.team-image-wrapper {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+}
+
+.team-image-wrapper:hover {
+  transform: translateY(-10px);
+}
+
+.main-image {
+  flex: 2;
+  min-width: 300px;
+}
+
+.secondary-image {
+  flex: 1;
+  min-width: 250px;
+}
+
+.team-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.team-image-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+.team-text {
+  background-color: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.team-text::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 3px solid rgba(126, 168, 126, 0.1);
+  border-radius: 12px;
+  top: 15px;
+  left: 15px;
+  z-index: -1;
+}
+
+.team-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #4a4a4a;
+  position: relative;
+  padding: 0 20px;
+  border-left: 3px solid rgba(126, 168, 126, 0.3);
+}
+
+@media screen and (max-width: 960px) {
+  .team-container {
+    padding: 60px 20px;
+  }
+
+  .team-header h1 {
+    font-size: 36px;
+  }
+
+  .team-text {
+    padding: 30px;
+  }
+
+  .team-text p {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team-container {
+    padding: 40px 20px;
+  }
+
+  .team-header h1 {
+    font-size: 32px;
+  }
+
+  .image-grid {
+    flex-direction: column;
+  }
+
+  .team-text {
+    padding: 25px;
+  }
+
+  .team-text p {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+  font-family: "Lato", sans-serif;
+  color: #4a4a4a;
+  background-color: #fcfbf7;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.page-header h1 {
+  color: #5f8c5f;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.leaf-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.divider-line {
+  height: 1px;
+  width: 80px;
+  background-color: #d5d1b7;
+  margin: 0 15px;
+}
+
+.leaf-divider i {
+  color: #7ea87e;
+  font-size: 18px;
+}
+
+.two-column-layout {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.column-item {
+  flex: 1;
+  min-width: 0; /* Prevents flex items from overflowing */
+}
+
+.image-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.small-image {
+  width: 100%;
+  height: 240px; /* Fixed height for consistent sizing */
+  object-fit: cover;
+  display: block;
+}
+
+.content-text {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.content-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .two-column-layout {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .small-image {
+    height: 200px;
+  }
+
+  .content-text {
+    padding: 25px;
+  }
+
+  .content-text p {
+    font-size: 15px;
+  }
+}
