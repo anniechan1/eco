@@ -57,7 +57,7 @@ function FarmerTraining() {
             <div className="training-image-grid three-images">
               <div className="training-image-item">
                 <img
-                  src="/images/girl.jpeg"
+                  src="/images/girl.JPG"
                   alt="Young farmer learning sustainable practices"
                   className="training-img"
                 />
@@ -106,10 +106,10 @@ function FarmerTraining() {
 
             <div className="training-image-grid">
               <div className="training-image-item">
-                <img src="/images/discuss.jpeg" alt="Inspector discussion session" className="training-img" />
+                <img src="/images/discuss.JPG" alt="Inspector discussion session" className="training-img" />
               </div>
               <div className="training-image-item">
-                <img src="/images/talk.jpeg" alt="Inspector field training" className="training-img" />
+                <img src="/images/talk.jpg" alt="Inspector field training" className="training-img" />
               </div>
             </div>
           </div>
@@ -150,7 +150,7 @@ function FarmerTraining() {
 
               <div className="auditor-image">
                 <div className="training-image-item">
-                  <img src="/images/group.jpg" alt="Auditor training session" className="training-img" />
+                  <img src="/images/group.JPG" alt="Auditor training session" className="training-img" />
                 </div>
               </div>
             </div>
