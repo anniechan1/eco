@@ -29,7 +29,7 @@ function HomeAboutSection() {
             <div className="timeline-image">
               <div className="image-grid">
                 <div className="image-item">
-                  <img src="/images/coffee.jpg" alt="coffee" className="small-image" />
+                  <img src="/images/coffee.jpeg" alt="coffee" className="small-image" />
                 </div>
                 <div className="image-item">
                   <img src="/images/crops.jpg" alt="crops" className="small-image" />

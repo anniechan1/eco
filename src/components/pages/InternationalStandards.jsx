@@ -19,7 +19,7 @@ function InternationalStandards() {
 
         <div className="logo-grid">
           <div className="logo-item">
-            <img src="/images/iso.jpg" alt="ISO certification" className="logo-image" />
+            <img src="/images/ISO.jpg" alt="ISO certification" className="logo-image" />
             <h3>ISO/IEC 17065</h3>
             <p>Conformity assessment for certification bodies</p>
           </div>
