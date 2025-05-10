@@ -27,8 +27,13 @@ function HomeAboutSection() {
               </p>
             </div>
             <div className="timeline-image">
-              <div className="image-placeholder">
-                <span>Photo 1: Our founding team</span>
+              <div className="image-grid">
+                <div className="image-item">
+                  <img src="/images/coffee.jpg" alt="coffee" className="small-image" />
+                </div>
+                <div className="image-item">
+                  <img src="/images/crops.jpg" alt="crops" className="small-image" />
+                </div>
               </div>
             </div>
           </div>
@@ -53,7 +58,7 @@ function HomeAboutSection() {
             </div>
             <div className="timeline-image">
               <div className="image-placeholder">
-                <span>Photo 2: Farmer training</span>
+                <img src="/images/farmers.jpg" alt="farmers" className="small-image" />
               </div>
             </div>
           </div>
@@ -74,8 +79,13 @@ function HomeAboutSection() {
               </ul>
             </div>
             <div className="timeline-image">
-              <div className="image-placeholder">
-                <span>Photo 3: Organic market</span>
+              <div className="image-grid">
+                <div className="image-item">
+                  <img src="/images/market.jpg" alt="market" className="small-image" />
+                </div>
+                <div className="image-item">
+                  <img src="/images/soap.jpg" alt="soap" className="small-image" />
+                </div>
               </div>
             </div>
           </div>

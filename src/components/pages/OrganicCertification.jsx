@@ -16,20 +16,6 @@ function OrganicCertification() {
     }
   }
 
-  // Add copy link functionality
-  const copyLinkToClipboard = (e, id) => {
-    e.preventDefault()
-    const url = `${window.location.origin}${window.location.pathname}#${id}`
-    navigator.clipboard
-      .writeText(url)
-      .then(() => {
-        alert("Link copied to clipboard!")
-      })
-      .catch((err) => {
-        console.error("Could not copy link: ", err)
-      })
-  }
-
   // Set up hash navigation on page load and scroll tracking
   useEffect(() => {
     // Handle initial hash navigation
@@ -67,7 +53,7 @@ function OrganicCertification() {
   return (
     <div className="page-container">
       <div className="page-header">
-        <h1>Scope of Certification</h1>
+        <h1>Organic Certification</h1>
         <div className="leaf-divider">
           <span className="divider-line"></span>
           <i className="fas fa-leaf"></i>
@@ -130,29 +116,19 @@ function OrganicCertification() {
       <div className="two-column-layout">
         <div className="column-item">
           <div className="image-card">
-            <div className="photo-placeholder">Photo 1: Organic farming practices</div>
+            <img src="/images/bee.jpg" alt="Organic beekeeping" className="certification-image" />
           </div>
         </div>
         <div className="column-item">
           <div className="image-card">
-            <div className="photo-placeholder">Photo 2: Certification process</div>
+            <img src="/images/bee1.jpg" alt="Bee on flower" className="certification-image" />
           </div>
         </div>
       </div>
 
       <div className="certification-types">
         <div id="beekeeping" className="certification-type">
-          <h2>
-            Organic Beekeeping (Apiary Certification)
-            <a
-              href="#beekeeping"
-              className="section-link"
-              title="Copy link to this section"
-              onClick={(e) => copyLinkToClipboard(e, "beekeeping")}
-            >
-              <i className="fas fa-link"></i>
-            </a>
-          </h2>
+          <h2>Organic Beekeeping (Apiary Certification)</h2>
           <p>
             We provide specialized certification for organic beekeeping (apiaries), ensuring that honey and bee products
             meet strict international organic standards. Our certification covers:
@@ -188,17 +164,7 @@ function OrganicCertification() {
         </div>
 
         <div id="crop-production" className="certification-type">
-          <h2>
-            Organic Crop Production
-            <a
-              href="#crop-production"
-              className="section-link"
-              title="Copy link to this section"
-              onClick={(e) => copyLinkToClipboard(e, "crop-production")}
-            >
-              <i className="fas fa-link"></i>
-            </a>
-          </h2>
+          <h2>Organic Crop Production</h2>
           <p>
             Our certification for Organic Crop Production focuses on sustainable, eco-friendly practices that protect
             soil health, biodiversity, and environmental integrity.
@@ -231,21 +197,11 @@ function OrganicCertification() {
             <li>Opens access to certified organic markets globally.</li>
           </ul>
 
-          <div className="photo-placeholder">Photo 3: Organic crop field</div>
+          <img src="/images/rural.jpg" alt="Organic crop field" className="certification-image rural-image" />
         </div>
 
         <div id="processing" className="certification-type">
-          <h2>
-            Processing & Handling
-            <a
-              href="#processing"
-              className="section-link"
-              title="Copy link to this section"
-              onClick={(e) => copyLinkToClipboard(e, "processing")}
-            >
-              <i className="fas fa-link"></i>
-            </a>
-          </h2>
+          <h2>Processing & Handling</h2>
           <p>
             We provide certification for Processing & Handling operations to ensure that organic integrity is preserved
             from farm to final product.
@@ -288,17 +244,7 @@ function OrganicCertification() {
         </div>
 
         <div id="wild-harvest" className="certification-type">
-          <h2>
-            Wild Harvest & Forestry
-            <a
-              href="#wild-harvest"
-              className="section-link"
-              title="Copy link to this section"
-              onClick={(e) => copyLinkToClipboard(e, "wild-harvest")}
-            >
-              <i className="fas fa-link"></i>
-            </a>
-          </h2>
+          <h2>Wild Harvest & Forestry</h2>
           <p>
             Our certification for Wild Harvest & Forestry ensures that the collection of wild plants, herbs, and forest
             products is conducted responsibly, sustainably, and in harmony with nature.

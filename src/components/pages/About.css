@@ -42,6 +42,7 @@
   display: flex;
   gap: 30px;
   margin-bottom: 40px;
+  height: auto; /* Remove fixed height */
 }
 
 .column-item {
@@ -53,13 +54,19 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  height: 350px; /* Increased height for better proportions */
 }
 
 .small-image {
   width: 100%;
-  height: 240px; /* Fixed height for consistent sizing */
+  height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.5s ease;
+}
+
+.image-card:hover .small-image {
+  transform: scale(1.05);
 }
 
 .content-text {
@@ -67,6 +74,7 @@
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
 }
 
 .content-text p {
@@ -114,14 +122,128 @@
   transform-origin: bottom left;
 }
 
+/* Add these new styles for the mission section and photo placeholders */
+.section-divider {
+  height: 1px;
+  background-color: rgba(126, 168, 126, 0.2);
+  margin: 40px 0;
+}
+
+.section-title {
+  color: #5f8c5f;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background-color: #7ea87e;
+}
+
+.mission-list {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.mission-list li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.mission-list li::before {
+  content: "•";
+  color: #7ea87e;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.photo-placeholder {
+  width: 100%;
+  height: 240px;
+  background-color: rgba(126, 168, 126, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7ea87e;
+  font-style: italic;
+  border: 1px dashed rgba(126, 168, 126, 0.3);
+}
+
+/* New styles for the three-image grid */
+.image-grid-three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+  height: auto; /* Remove fixed height */
+}
+
+.grid-image-item {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Adjust heights based on image proportions */
+.grid-image-item:nth-child(1) {
+  /* For bean.jpg (landscape) */
+  height: 250px;
+}
+
+.grid-image-item:nth-child(2) {
+  /* For bean1.jpg (portrait) */
+  height: 300px;
+}
+
+.grid-image-item:nth-child(3) {
+  /* For cooperate.jpg */
+  height: 250px;
+}
+
+.grid-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.grid-image-item:hover .grid-image {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 900px) {
+  .image-grid-three {
+    grid-template-columns: 1fr 1fr; /* Two columns on tablet */
+  }
+
+  .grid-image-item:nth-child(3) {
+    grid-column: span 2; /* Make the third image span both columns */
+    height: 250px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .two-column-layout {
     flex-direction: column;
     gap: 20px;
   }
 
-  .small-image {
-    height: 200px;
+  .image-card {
+    height: 250px; /* Smaller height on mobile */
   }
 
   .content-text {
@@ -130,5 +252,14 @@
 
   .content-text p {
     font-size: 15px;
+  }
+
+  .image-grid-three {
+    grid-template-columns: 1fr; /* One column on mobile */
+  }
+
+  .grid-image-item:nth-child(n) {
+    grid-column: span 1;
+    height: 250px; /* Consistent height on mobile */
   }
 }

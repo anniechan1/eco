@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "./components/pages/Home"
 import About from "./components/pages/About"
 import History from "./components/pages/History"
-import OurTeam from "./components/pages/OurTeam"
 import OurMethod from "./components/pages/OurMethod"
 import Sustainability from "./components/pages/Sustainability"
 import Contact from "./components/pages/Contact"
@@ -15,6 +14,10 @@ import FarmerTraining from "./components/pages/FarmerTraining"
 import CertificationProcess from "./components/pages/CertificationProcess"
 import IndependenceIntegrity from "./components/pages/IndependenceIntegrity"
 import InternationalStandards from "./components/pages/InternationalStandards"
+import DigitalPlatform from "./components/pages/DigitalPlatform"
+import Partnerships from "./components/pages/Partnerships"
+import Accreditation from "./components/pages/Accreditation"
+import ScrollToTop from "./components/ScrollToTop"
 
 import "./App.css"
 
@@ -22,12 +25,13 @@ function App() {
   return (
     <>
       <Router>
+          <ScrollToTop />
         <NavbarOption1 />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/history" element={<History />} />
-          <Route path="/our-team" element={<OurTeam />} />
+         
           <Route path="/our-method" element={<OurMethod />} />
           <Route path="/sustainability" element={<Sustainability />} />
           <Route path="/contact" element={<Contact />} />
@@ -37,6 +41,12 @@ function App() {
           <Route path="/certification-process" element={<CertificationProcess />} />
           <Route path="/independence-integrity" element={<IndependenceIntegrity />} />
           <Route path="/international-standards" element={<InternationalStandards />} />
+          <Route path="/digital-platform" element={<DigitalPlatform />} />
+          <Route path="/partnerships" element={<Partnerships />} />
+          <Route path="/accreditation" element={<Accreditation />} />
+          
+
+
         </Routes>
         <Footer />
       </Router>

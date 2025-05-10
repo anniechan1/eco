@@ -169,7 +169,7 @@
 .page-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px 80px;
+  padding: 40px 20px 40px; /* Reduced bottom padding from 80px to 40px */
   font-family: "Lato", sans-serif;
   color: #4a4a4a;
   background-color: #fcfbf7;
@@ -221,11 +221,12 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  height: 350px;
 }
 
 .small-image {
   width: 100%;
-  height: 240px; /* Fixed height for consistent sizing */
+  height: 100%;
   object-fit: cover;
   display: block;
 }
@@ -235,6 +236,7 @@
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
 }
 
 .content-text p {
@@ -243,14 +245,80 @@
   margin: 0;
 }
 
+/* Section divider and header styles */
+.section-divider {
+  height: 1px;
+  background-color: rgba(126, 168, 126, 0.2);
+  margin: 40px 0;
+}
+
+.section-header {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  color: #5f8c5f;
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background-color: #7ea87e;
+}
+
+/* Team image grid styles */
+.team-image-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.team-image-item {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  height: 350px;
+  transition: transform 0.3s ease;
+}
+
+.team-image-item:hover {
+  transform: translateY(-5px);
+}
+
+.team-image-item.large {
+  height: 400px;
+}
+
+.team-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.team-image-item:hover .team-image {
+  transform: scale(1.05);
+}
+
 @media screen and (max-width: 768px) {
   .two-column-layout {
     flex-direction: column;
     gap: 20px;
   }
 
-  .small-image {
-    height: 200px;
+  .image-card {
+    height: 250px;
   }
 
   .content-text {
@@ -259,5 +327,112 @@
 
   .content-text p {
     font-size: 15px;
+  }
+
+  .team-image-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .team-image-item,
+  .team-image-item.large {
+    height: 280px;
+  }
+}
+
+/* Asymmetric layout with diagonal images */
+.asymmetric-layout {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "top-left-img main-content"
+    "team-content bottom-right-img";
+  gap: 30px; /* Reduced from 40px */
+  margin-bottom: 20px; /* Reduced from 60px */
+}
+
+.top-left-image,
+.bottom-right-image {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.top-left-image {
+  grid-area: top-left-img;
+  /* Adjust for the smaller image (350x233) */
+  height: 233px;
+  width: 350px;
+  justify-self: center;
+}
+
+.bottom-right-image {
+  grid-area: bottom-right-img;
+  /* Remove fixed dimensions and let it be more flexible */
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-left-image:hover,
+.bottom-right-image:hover {
+  transform: translateY(-5px);
+}
+
+.history-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.top-left-image:hover .history-image,
+.bottom-right-image:hover .history-image {
+  transform: scale(1.05);
+}
+
+.main-content {
+  grid-area: main-content;
+}
+
+.team-content {
+  grid-area: team-content;
+}
+
+.section-divider {
+  grid-column: 1 / -1;
+  height: 1px;
+  background-color: rgba(126, 168, 126, 0.2);
+  margin: 20px 0;
+}
+
+.section-header {
+  grid-column: 1 / -1;
+}
+
+@media screen and (max-width: 768px) {
+  .asymmetric-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "top-left-img"
+      "main-content"
+      "section-divider"
+      "team-content"
+      "bottom-right-img";
+  }
+
+  .top-left-image,
+  .bottom-right-image {
+    min-height: 250px;
+    max-height: 300px;
   }
 }

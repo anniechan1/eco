@@ -1,0 +1,154 @@
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+  font-family: "Lato", sans-serif;
+  color: #4a4a4a;
+  background-color: #fcfbf7;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.page-header h1 {
+  color: #5f8c5f;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.leaf-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.divider-line {
+  height: 1px;
+  width: 80px;
+  background-color: #d5d1b7;
+  margin: 0 15px;
+}
+
+.leaf-divider i {
+  color: #7ea87e;
+  font-size: 18px;
+}
+
+/* Accreditation Section */
+.accreditation-section {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.accreditation-content {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.accreditation-text {
+  flex: 2;
+}
+
+.accreditation-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.accreditation-text ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.accreditation-text li {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.accreditation-text li::before {
+  content: "•";
+  color: #7ea87e;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.thank-you {
+  font-style: italic;
+  color: #5f8c5f;
+  font-weight: 500;
+}
+
+.accreditation-image {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  height: 300px;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.flower-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.accreditation-image:hover .flower-img {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 900px) {
+  .accreditation-content {
+    flex-direction: column;
+  }
+
+  .accreditation-image {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-header h1 {
+    font-size: 28px;
+  }
+
+  .accreditation-section {
+    padding: 25px;
+  }
+
+  .accreditation-text p,
+  .accreditation-text li {
+    font-size: 15px;
+  }
+}

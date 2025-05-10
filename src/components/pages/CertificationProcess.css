@@ -228,3 +228,201 @@
     font-size: 16px;
   }
 }
+
+/* Add these new animation styles at the end of the file */
+
+/* Animated step indicators */
+.step-animation {
+  width: 100%;
+  height: 180px;
+  background-color: rgba(126, 168, 126, 0.05);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.animated-circle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #7ea87e;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: moveCircle 8s infinite ease-in-out;
+  opacity: 0;
+}
+
+.animated-circle::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid rgba(126, 168, 126, 0.3);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulse 2s infinite;
+}
+
+.animated-circle:nth-child(1) {
+  animation-delay: 0s;
+  left: 10%;
+}
+
+.animated-circle:nth-child(2) {
+  animation-delay: 1.6s;
+  left: 30%;
+}
+
+.animated-circle:nth-child(3) {
+  animation-delay: 3.2s;
+  left: 50%;
+}
+
+.animated-circle:nth-child(4) {
+  animation-delay: 4.8s;
+  left: 70%;
+}
+
+.animated-circle:nth-child(5) {
+  animation-delay: 6.4s;
+  left: 90%;
+}
+
+.animated-line {
+  position: absolute;
+  height: 3px;
+  background: linear-gradient(to right, #7ea87e, rgba(126, 168, 126, 0.3));
+  top: 50%;
+  left: 5%;
+  width: 90%;
+  transform: translateY(-50%);
+}
+
+.animated-step-number {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes moveCircle {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.8);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+  20%,
+  90% {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.8);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.8;
+  }
+}
+
+/* Flow animation */
+.flow-animation {
+  position: relative;
+  height: 80px;
+  margin: 30px 0;
+  overflow: hidden;
+}
+
+.flow-line {
+  position: absolute;
+  height: 3px;
+  background-color: rgba(126, 168, 126, 0.2);
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.flow-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #7ea87e;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: flowDot 6s infinite linear;
+  opacity: 0;
+}
+
+.flow-dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.flow-dot:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.flow-dot:nth-child(3) {
+  animation-delay: 4s;
+}
+
+@keyframes flowDot {
+  0% {
+    left: -10px;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .step-animation {
+    height: 150px;
+  }
+
+  .animated-circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .animated-circle::before {
+    width: 45px;
+    height: 45px;
+  }
+
+  .animated-step-number {
+    font-size: 14px;
+  }
+}

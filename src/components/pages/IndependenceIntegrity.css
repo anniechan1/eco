@@ -38,79 +38,75 @@
   font-size: 18px;
 }
 
-/* New Banner Design */
-.integrity-banner {
-  background: linear-gradient(135deg, #7ea87e, #a7c4a7);
-  border-radius: 20px;
-  padding: 40px;
-  margin-bottom: 50px;
-  text-align: center;
-  color: white;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  position: relative;
-  overflow: hidden;
+/* Integrity Section - Open, flowing design */
+.integrity-section {
+  margin-bottom: 80px;
 }
 
-.integrity-banner::before {
-  content: "";
-  position: absolute;
-  top: -50px;
-  right: -50px;
-  width: 200px;
-  height: 200px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
+.integrity-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
-.integrity-banner::after {
-  content: "";
-  position: absolute;
-  bottom: -30px;
-  left: -30px;
-  width: 150px;
-  height: 150px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
+.integrity-icon {
+  font-size: 36px;
+  color: #7ea87e;
+  margin-right: 20px;
 }
 
-.banner-content {
-  position: relative;
-  z-index: 1;
-}
-
-.integrity-banner h2 {
+.integrity-header h2 {
+  color: #5f8c5f;
   font-size: 32px;
-  margin-bottom: 15px;
   font-weight: 500;
+  margin: 0;
+  position: relative;
 }
 
-.integrity-banner p {
+.integrity-header h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background-color: #7ea87e;
+}
+
+.integrity-intro {
   font-size: 22px;
-  max-width: 800px;
-  margin: 0 auto;
+  color: #4a4a4a;
+  margin: 0 0 40px 0;
+  padding-left: 56px; /* Aligns with the heading text */
 }
 
-/* Principles Section */
+/* Update the principles section to have the image next to the text */
+.principles-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-bottom: 0; /* Remove bottom margin */
+  flex: 2; /* Take more space than the image */
+}
+
+/* Create a flex container for principles list and image */
 .principles-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-bottom: 60px;
-  background-color: white;
-  border-radius: 20px;
-  padding: 40px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 50px;
 }
 
 .principles-image {
-  flex: 1;
-  min-width: 300px;
+  margin-top: 0; /* Remove top margin */
+  flex: 1; /* Take less space than the list */
 }
 
 .principles-image-placeholder {
   width: 100%;
-  height: 100%;
-  min-height: 350px;
+  height: 100%; /* Make it fill the container */
+  max-width: none; /* Remove max-width */
+  min-height: 300px; /* Ensure minimum height */
   background-color: rgba(126, 168, 126, 0.1);
   border-radius: 15px;
   display: flex;
@@ -121,39 +117,28 @@
   border: 1px dashed rgba(126, 168, 126, 0.3);
 }
 
-.principles-list {
-  flex: 1;
-  min-width: 300px;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  justify-content: center;
-}
-
 .principle-item {
   display: flex;
   align-items: center;
   gap: 20px;
-  background-color: #f9f7f0;
-  border-radius: 15px;
   padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
 }
 
 .principle-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
 .principle-icon {
   width: 60px;
   height: 60px;
-  background-color: white;
+  background-color: rgba(126, 168, 126, 0.1);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
 }
 
@@ -169,13 +154,46 @@
   color: #4a4a4a;
 }
 
-/* Governance Section */
-.governance-container {
-  background-color: white;
-  border-radius: 20px;
-  padding: 40px;
-  margin-bottom: 60px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+.principles-image {
+  margin-top: 20px;
+}
+
+/* Governance Section - Clean, open design */
+.governance-section {
+  margin-top: 80px;
+}
+
+.governance-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  background-color: rgba(126, 168, 126, 0.1);
+  padding: 15px 20px;
+  border-radius: 12px;
+}
+
+.governance-icon {
+  font-size: 36px;
+  color: #7ea87e;
+  margin-right: 20px;
+}
+
+.governance-header h2 {
+  color: #5f8c5f;
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0;
+  position: relative;
+}
+
+.governance-header h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background-color: #7ea87e;
 }
 
 .governance-content {
@@ -188,54 +206,26 @@
 .governance-text {
   flex: 1;
   min-width: 300px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.governance-icon {
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(135deg, #7ea87e, #a7c4a7);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.governance-icon i {
-  font-size: 32px;
-  color: white;
-}
-
-.governance-text h2 {
-  color: #5f8c5f;
-  font-size: 28px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-
-.governance-divider {
-  width: 80px;
-  height: 3px;
-  background-color: #7ea87e;
-  margin: 0 auto 20px;
 }
 
 .governance-text p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.7;
   color: #4a4a4a;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0 20px;
-  background-color: rgba(126, 168, 126, 0.05);
-  border-radius: 10px;
-  padding: 20px;
-  border-left: 4px solid #7ea87e;
+  margin: 0;
+  padding-left: 56px; /* Aligns with the heading text */
+  position: relative;
+}
+
+/* Remove this entire block to remove the vertical line before each paragraph */
+.governance-text p::before {
+  content: none; /* Changed from "" to none to completely disable it */
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #7ea87e;
 }
 
 .governance-image {
@@ -254,64 +244,79 @@
   color: #7ea87e;
   font-style: italic;
   border: 1px dashed rgba(126, 168, 126, 0.3);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
+/* Completely redesign the governance section */
+.governance-content.full-width .governance-text {
+  max-width: 100%;
+  padding: 30px;
+  background-color: #f9f7f0; /* Light background */
+  border-radius: 12px;
+  position: relative;
+  border-left: 5px solid #7ea87e; /* Restored the accent bar */
+}
+
+.governance-content.full-width .governance-text p {
+  background-color: transparent; /* Remove individual card backgrounds */
+  padding: 0;
+  margin-bottom: 20px;
+  box-shadow: none;
+  border-left: none;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Media query updates */
 @media screen and (max-width: 768px) {
-  .integrity-banner {
-    padding: 30px 20px;
+  .integrity-header,
+  .governance-header {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .integrity-banner h2 {
-    font-size: 24px;
+  .integrity-icon,
+  .governance-icon {
+    margin-right: 0;
+    margin-bottom: 15px;
   }
 
-  .integrity-banner p {
+  .integrity-header h2::after,
+  .governance-header h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .integrity-intro {
+    text-align: center;
+    padding-left: 0;
     font-size: 18px;
   }
 
-  .principles-container,
-  .governance-container {
-    padding: 30px 20px;
-  }
-
-  .principle-item {
-    padding: 15px;
-  }
-
-  .principle-icon {
-    width: 50px;
-    height: 50px;
-  }
-
-  .principle-icon i {
-    font-size: 20px;
-  }
-
-  .principle-text p {
-    font-size: 15px;
-  }
-
-  .governance-icon {
-    width: 60px;
-    height: 60px;
-  }
-
-  .governance-icon i {
-    font-size: 24px;
-  }
-
-  .governance-text h2 {
-    font-size: 22px;
+  .principles-list {
+    grid-template-columns: 1fr;
   }
 
   .governance-text p {
-    font-size: 16px;
-    padding: 15px;
+    padding-left: 15px;
+    font-size: 18px;
   }
 
   .principles-image-placeholder,
   .governance-image-placeholder {
-    min-height: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .principles-container {
+    flex-direction: column;
+  }
+
+  .principles-image {
+    width: 100%;
+  }
+
+  .principles-image-placeholder {
+    height: 250px;
   }
 }

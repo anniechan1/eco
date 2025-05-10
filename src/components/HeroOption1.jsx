@@ -62,9 +62,11 @@ function HeroOption1() {
                 Get Certified
               </Button>
             </Link>
+             <Link to="/services/farmer-training">
             <Button className="btns" buttonStyle="btn--outline" buttonSize="btn--large">
               Explore Our Services
             </Button>
+            </Link>
           </div>
         </div>
 

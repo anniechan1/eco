@@ -12,21 +12,15 @@ function About() {
         </div>
       </div>
 
-      <div className="two-column-layout">
-        <div className="column-item">
-          <div className="image-card">
-             <img 
-            //  src="/images/about-image-1.jpg" alt="Farmers in field" 
-             className="small-image" /> 
-          </div>
+      <div className="image-grid-three">
+        <div className="grid-image-item">
+          <img src="/images/beans.jpg" alt="Coffee beans" className="grid-image" />
         </div>
-
-        <div className="column-item">
-          <div className="image-card">
-            <img 
-            // src="/images/eco-hero.jpg" alt="Eco landscape" 
-            className="small-image" />
-          </div>
+        <div className="grid-image-item">
+          <img src="/images/beans1.jpeg" alt="Coffee beans close-up" className="grid-image" />
+        </div>
+        <div className="grid-image-item">
+          <img src="/images/cooperate.jpg" alt="Cooperation" className="grid-image" />
         </div>
       </div>
 
@@ -47,6 +41,39 @@ function About() {
           platform, we help bridge the gap between compliance and long-term impact.
         </p>
       </div>
+
+      <div className="section-divider"></div>
+
+      <div className="content-text">
+        <h2 className="section-title">Our Mission</h2>
+        <p>
+          We are Ethiopia's first dedicated eco-certification body, established to empower local producers and
+          processors with internationally recognized organic certification. Our mission is to foster sustainability,
+          enhance market access, and build trust through transparent and credible certification.
+        </p>
+        <ul className="mission-list">
+          <li>Certify in line with global standards.</li>
+          <li>Empower Ethiopian producers to compete globally.</li>
+          <li>Advance ecological, social, and economic sustainability.</li>
+        </ul>
+      </div>
+
+      <div className="two-column-layout">
+        <div className="column-item">
+          <div className="image-card">
+            <img src="/images/tree.jpg" alt="Tree" className="small-image" />
+          </div>
+        </div>
+
+        <div className="column-item">
+          <div className="image-card">
+            <img src="/images/field.jpg" alt="Field" className="small-image" />
+          </div>
+        </div>
+      </div>
+
+    
+      
     </div>
   )
 }

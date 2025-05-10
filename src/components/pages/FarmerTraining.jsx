@@ -54,7 +54,21 @@ function FarmerTraining() {
               <li>Digital resources and manuals in local languages.</li>
             </ul>
 
-            <div className="image-placeholder">Photo 1: Farmer training workshop</div>
+            <div className="training-image-grid three-images">
+              <div className="training-image-item">
+                <img
+                  src="/images/girl.jpg"
+                  alt="Young farmer learning sustainable practices"
+                  className="training-img"
+                />
+              </div>
+              <div className="training-image-item">
+                <img src="/images/lesson.jpg" alt="Farmer training workshop" className="training-img" />
+              </div>
+              <div className="training-image-item">
+                <img src="/images/lab1.jpg" alt="Sustainable farming practices" className="training-img" />
+              </div>
+            </div>
           </div>
         </div>
 
@@ -90,7 +104,14 @@ function FarmerTraining() {
               <li>Continuous Professional Development (CPD).</li>
             </ul>
 
-            <div className="image-placeholder">Photo 2: Inspector field training</div>
+            <div className="training-image-grid">
+              <div className="training-image-item">
+                <img src="/images/discuss.jpg" alt="Inspector discussion session" className="training-img" />
+              </div>
+              <div className="training-image-item">
+                <img src="/images/talk.jpg" alt="Inspector field training" className="training-img" />
+              </div>
+            </div>
           </div>
         </div>
 
@@ -117,14 +138,22 @@ function FarmerTraining() {
               </li>
             </ul>
 
-            <h3>Training Modes:</h3>
-            <ul>
-              <li>Online modules.</li>
-              <li>In-person training sessions.</li>
-              <li>Mentorship programs with senior auditors.</li>
-            </ul>
+            <div className="auditor-content-layout">
+              <div className="auditor-text">
+                <h3>Training Modes:</h3>
+                <ul>
+                  <li>Online modules.</li>
+                  <li>In-person training sessions.</li>
+                  <li>Mentorship programs with senior auditors.</li>
+                </ul>
+              </div>
 
-            <div className="image-placeholder">Photo 3: Auditor training session</div>
+              <div className="auditor-image">
+                <div className="training-image-item">
+                  <img src="/images/group.jpg" alt="Auditor training session" className="training-img" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -168,7 +197,9 @@ function FarmerTraining() {
               </div>
             </div>
             <div className="platform-image">
-              <div className="image-placeholder">Photo 4: Digital learning platform</div>
+              <div className="training-image-item">
+                <img src="/images/mobile.jpg" alt="Digital learning platform" className="training-img" />
+              </div>
             </div>
           </div>
         </div>

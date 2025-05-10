@@ -26,9 +26,6 @@ function CertificationProcess() {
                 The first step in your certification journey begins with submitting your application and required
                 documentation.
               </p>
-              <div className="step-image-placeholder">
-                <span>Photo: Application process</span>
-              </div>
             </div>
           </div>
 
@@ -48,9 +45,6 @@ function CertificationProcess() {
             <div className="step-content">
               <h3>Onsite Audit</h3>
               <p>Comprehensive inspection of operations to verify compliance with applicable standards.</p>
-              <div className="step-image-placeholder">
-                <span>Photo: Onsite inspection</span>
-              </div>
             </div>
           </div>
 
@@ -70,9 +64,6 @@ function CertificationProcess() {
                 Independent decision-making committee reviews all documentation and makes the final certification
                 determination.
               </p>
-              <div className="step-image-placeholder">
-                <span>Photo: Certification approval</span>
-              </div>
             </div>
           </div>
 

@@ -12,78 +12,70 @@ function OurMethod() {
         </div>
       </div>
 
-      <div className="two-column-layout image-offset">
-        <div className="column-item">
-          <div className="image-card primary-image">
-            <img 
-            // src="/images/warren-J33qmCVr02A-unsplash.jpg" alt="Digital certification" 
-            className="small-image" />
+      <div className="digital-intro">
+        <div className="digital-animation">
+          <div className="digital-certificate">
+            <div className="certificate-body">
+              <div className="certificate-icon">
+                <i className="fas fa-award"></i>
+              </div>
+              <div className="certificate-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div className="certificate-badge">
+              <i className="fas fa-check"></i>
+            </div>
           </div>
         </div>
-
-        <div className="column-item">
-          <div className="image-card secondary-image">
-            <img 
-            // src="/images/eco-hero.jpg" alt="Eco landscape" 
-            className="small-image" />
-          </div>
+        <div className="intro-text">
+          <p>
+            At EcoCertification, we streamline certification through digital innovation. Our online platform—built in
+            cooperation with EVC—simplifies communication, documentation, and tracking throughout the certification
+            process.
+          </p>
+          <p>From application to final approval, our digital tools:</p>
         </div>
       </div>
 
-      <div className="content-text">
-        <p>
-          At EcoCertification, we streamline certification through digital innovation. Our online platform—built in
-          cooperation with EVC—simplifies communication, documentation, and tracking throughout the certification
-          process.
-        </p>
-        <p>From application to final approval, our digital tools:</p>
-
-        <div className="values-grid">
-          <div className="value-item">
-            <div className="value-icon">
-              <i className="fas fa-file-alt"></i>
-            </div>
-            <div className="value-content">
-              <h3>Reduce paperwork</h3>
-              <p>some text</p>
-            </div>
+      <div className="digital-features">
+        <div className="feature-item">
+          <div className="feature-icon">
+            <i className="fas fa-file-alt"></i>
           </div>
-
-          <div className="value-item">
-            <div className="value-icon">
-              <i className="fas fa-chart-line"></i>
-            </div>
-            <div className="value-content">
-              <h3>Improve data accuracy</h3>
-              <p>.....</p>
-            </div>
-          </div>
-
-          <div className="value-item">
-            <div className="value-icon">
-              <i className="fas fa-sync-alt"></i>
-            </div>
-            <div className="value-content">
-              <h3>Real-time status updates</h3>
-              <p>...</p>
-            </div>
-          </div>
-
-          <div className="value-item">
-            <div className="value-icon">
-              <i className="fas fa-search"></i>
-            </div>
-            <div className="value-content">
-              <h3>Increase transparency</h3>
-              <p>....</p>
-            </div>
+          <div className="feature-content">
+            <h3>Reduce paperwork</h3>
           </div>
         </div>
 
-        <p>
-          We combine technology with a human approach, ensuring that producers are never left alone with complex
-          requirements.
-        </p>
+        <div className="feature-item">
+          <div className="feature-icon">
+            <i className="fas fa-chart-line"></i>
+          </div>
+          <div className="feature-content">
+            <h3>Improve data accuracy</h3>
+          </div>
+        </div>
+
+        <div className="feature-item">
+          <div className="feature-icon">
+            <i className="fas fa-sync-alt"></i>
+          </div>
+          <div className="feature-content">
+            <h3>Real-time status updates</h3>
+          </div>
+        </div>
+
+        <div className="feature-item">
+          <div className="feature-icon">
+            <i className="fas fa-search"></i>
+          </div>
+          <div className="feature-content">
+            <h3>Increase transparency</h3>
+          </div>
+        </div>
       </div>
     </div>
   )

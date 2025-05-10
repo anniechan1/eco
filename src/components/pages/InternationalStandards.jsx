@@ -17,52 +17,50 @@ function InternationalStandards() {
           <p>We strictly adhere to:</p>
         </div>
 
-        <div className="standards-grid">
-          <div className="standard-card">
-            <div className="standard-icon">
-              <i className="fas fa-clipboard-check"></i>
-            </div>
+        <div className="logo-grid">
+          <div className="logo-item">
+            <img src="/images/iso.jpg" alt="ISO certification" className="logo-image" />
             <h3>ISO/IEC 17065</h3>
-            <p>Conformity assessment for certification bodies.</p>
-            <div className="standard-image-placeholder">
-              <span>Photo: ISO certification</span>
-            </div>
+            <p>Conformity assessment for certification bodies</p>
           </div>
 
-          <div className="standard-card">
-            <div className="standard-icon">
-              <i className="fas fa-seedling"></i>
-            </div>
+          <div className="logo-item">
+            <img src="/images/IFOAM.png" alt="IFOAM certification" className="logo-image" />
             <h3>IFOAM Norms</h3>
-            <p>Best practices in organic certification.</p>
-            <div className="standard-image-placeholder">
-              <span>Photo: IFOAM compliance</span>
-            </div>
+            <p>Best practices in organic certification</p>
           </div>
 
-          <div className="standard-card">
-            <div className="standard-icon">
-              <i className="fas fa-globe-europe"></i>
-            </div>
-            <h3>National & International Organic Regulations</h3>
-            <p>Including the EU Organic Regulation (2018/848) and USDA NOP.</p>
-            <div className="standard-image-placeholder">
-              <span>Photo: International regulations</span>
-            </div>
+          <div className="logo-item">
+            <img src="/images/eu.jpg" alt="EU Organic certification" className="logo-image" />
+            <h3>EU Organic Regulation</h3>
+            <p>European standards (2018/848)</p>
+          </div>
+
+          <div className="logo-item">
+            <img src="/images/usda.jpg" alt="USDA NOP certification" className="logo-image" />
+            <h3>USDA NOP</h3>
+            <p>US National Organic Program</p>
           </div>
         </div>
 
         <div className="traceability-section">
           <div className="traceability-content">
-            <div className="traceability-icon">
-              <i className="fas fa-route"></i>
+            <div className="traceability-header">
+              <div className="traceability-icon">
+                <i className="fas fa-route"></i>
+              </div>
+              <h2>Traceability & Transparency</h2>
             </div>
-            <h2>Traceability & Transparency</h2>
-            <p>We ensure complete traceability and transparency, backed by robust documentation and audit trails.</p>
-          </div>
-          <div className="traceability-visual">
-            <div className="traceability-image-placeholder">
-              <span>Photo: Traceability system in action</span>
+            <div className="traceability-text">
+              <p>
+                We ensure complete traceability and transparency throughout the supply chain, backed by robust
+                documentation and audit trails. Our systems allow for verification at every step of the process, from
+                farm to final product, ensuring the integrity of certified products.
+              </p>
+              <p>
+                Our digital platform enhances this traceability by providing real-time access to certification data,
+                allowing stakeholders to verify compliance status and track product journeys with confidence.
+              </p>
             </div>
           </div>
         </div>
